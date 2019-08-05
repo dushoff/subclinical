@@ -19,6 +19,8 @@ $(ms)/Makefile:
 
 Sources += $(wildcard *.R)
 
+### Subclinical simulations
+
 %.inc.Rout: %.sim.Rout inc.R
 	$(run-R)
 %.incplots.Rout: %.inc.Rout incplots.R
@@ -30,6 +32,14 @@ Sources += $(wildcard *.R)
 
 ## base.incplots.Rout: base.R
 ## base.tsplots.Rout: base.R
+
+## small/large epidemics
+## cp ~/Dropbox/academicWW/Ebola_math/outbreaks/*.R . ##
+%.curve.Rout: %.Rout funs.Rout curve.R
+	$(run-R)
+
+##
+
 
 ######################################################################
 
