@@ -34,12 +34,12 @@ Sources += $(wildcard *.R)
 ## base.tsplots.Rout: base.R
 
 ## small/large epidemics
-## cp ~/Dropbox/academicWW/Ebola_math/outbreaks/*.R . ##
+## cp ~/Dropbox/academicWW/Ebola_math/outbreaks/base.R out.R ##
 %.curve.Rout: %.Rout funs.Rout curve.R
 	$(run-R)
 
-##
-
+## ebola.curve.Rout: ebola.R
+## out.curve.Rout: out.R
 
 ######################################################################
 

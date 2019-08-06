@@ -1,5 +1,5 @@
 library(ggplot2)
-theme_set(theme_bw())
+theme_set(theme_bw(20))
 
 casePlot <- (
 	ggplot(incs, aes(x=weekEnd, y=cases))
